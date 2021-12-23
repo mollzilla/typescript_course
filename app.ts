@@ -4,18 +4,19 @@
 //   return n1 + n2;
 // }
 
-function add(n1: number, n2: number): number { // can specify explicitly the type but best let TS infer it. Will complain if I specify string bc it does not make sense 
+function add(n1: number, n2: number): number {
+  // can specify explicitly the type but best let TS infer it. Will complain if I specify string bc it does not make sense
   return n1 + n2;
 }
 
-
 // VOID
 
-function printResult(num: number): void { // this does not return anything, therefore void. No need to specify, TS infers
-  console.log('Result = '+ num)
+function printResult(num: number): void {
+  // this does not return anything, therefore void. No need to specify, TS infers
+  console.log('Result = ' + num);
 }
 
-printResult(add(2,3))
+printResult(add(2, 3));
 
 // if we do console.log a function that does not return, it will return  undefined. But function returnc cannot be of type undefined. TS would expect a return; but not not return at all.
 
@@ -32,7 +33,3 @@ let containFunction: Function;
 containFunction = printResult;
 
 // but I could store any function and it could return wrong values if I redeclare it
-
-
-
-

@@ -1,11 +1,10 @@
-console.log("hi there lite server");
+console.log('hi there lite server');
 
 function add(n1: number, n2: number, printy: boolean, phrase: string) {
-  if(printy) {
-    const result = n1 + n2
+  if (printy) {
+    const result = n1 + n2;
     console.log(phrase + result);
-  }
-  else {
+  } else {
     return n1 + n2;
   }
 }
@@ -14,17 +13,15 @@ function add(n1: number, n2: number, printy: boolean, phrase: string) {
 let number1: number = 5;
 const number2 = 5;
 
-number1 = 0
-console.log(typeof number1)
-
+number1 = 0;
+console.log(typeof number1);
 
 const printResult = true;
-const phrase = "hey there "
-add(number1, number2, printResult, phrase)
+const phrase = 'hey there ';
+add(number1, number2, printResult, phrase);
 
 let mili: null;
 
-console.log(mili)
+console.log(mili);
 
-console.log(typeof 0)
-
+console.log(typeof 0);
