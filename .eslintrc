@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["eslint-plugin-react-hooks", "@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "camelcase": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": ["error"],
+    "react/react-in-jsx-scope": "off",
+    "one-var": [2, "never"],
+    "eqeqeq": "error",
+    "array-callback-return": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/promise-function-async": "error",
+    "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-empty-function": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
