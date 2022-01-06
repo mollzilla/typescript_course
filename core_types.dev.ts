@@ -22,11 +22,12 @@ console.log(person.age); // if I don't type it as a person, it will offer me sup
 
 // Arrays
 const person3: {
-  // best to let ts infer?
+  // best to let ts infer?s
   name: string;
   age: number;
   hobbies: string[];
   role: [number, string];
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
 } = {
   name: 'mili',
   age: 37,

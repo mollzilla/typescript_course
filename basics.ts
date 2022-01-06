@@ -20,8 +20,10 @@ const printResult = true;
 const phrase = 'hey there ';
 add(number1, number2, printResult, phrase);
 
-let mili: null;
+let mili2: null;
 
-console.log(mili);
+if (true && false) {
+  console.log(mili2);
+}
 
 console.log(typeof 0);
